@@ -1,0 +1,80 @@
+{
+    "env": {
+        "urls": {
+            "baseUrl": "https://visaotecnica.movidesktest.com/",
+            "baseUrl_local": "http://localhost:3000/",
+            "kbUrl":"https://visaotecnica.movidesktest.com/kb"
+        },
+        "login": {
+            "valid_user": {
+                "user": "automation.agente",
+                "password": "12345678"
+            },
+            "invalid_user": {
+                "user": "automation.agentenotfound",
+                "password": "12345678"
+            },
+            "invalid_password": {
+                "user": "automation.agente",
+                "password": "errorpassord"
+            },
+            "login_forms": {
+                "user": "automation.forms",
+                "password": "12345678"
+            },
+            "login_customFields": {
+                "user": "automation.customFields",
+                "password": "12345678"
+            },
+            "login_knowledgeBase": {
+                "user": "automation.knowledgeBase",
+                "password": "12345678"
+            },
+            "login_article": {
+                "user": "automation.article",
+              "password": "12345678"
+            },
+            "login_sla": {
+                "user": "automation.sla",
+                "password": "12345678"
+            },
+            "login_timeContracts": {
+                "user": "automation.timeContracts",
+                "password": "12345678"
+            },
+            "login_activity": {
+                "user": "automation.activity",
+                "password": "12345678"
+            },
+            "login_time_type": {
+                "user": "automation.timeType",
+                "password": "12345678"
+            }
+        },
+        "home": {
+            "url": "TO DO"
+        },
+        "ticket": {
+            "url": "TO DO",
+            "text": {
+                "automation_agente": "Automation Agente",
+                "email": "automation-agente@movi.com.br",
+                "msg_ticket": "TESTE AUTOMATION e22a6bf3-f678-4ec0-b9d2-de8e8e53bbe8",
+                "id_ticket": "66296"
+            }
+        },
+        "person": {
+            "person_name": "Alex Gonçalves",
+            "e_mail": "alex@visaotecnica.com.br.e8x"
+        },
+        "customField": {
+            "custom_fiedl_name": "Automation-5297",
+            "empty_option": " ",
+            "text_option_field": "Campo adicional automatizado"
+        },
+        "activity": {
+            "name": "Automacao Web",
+            "valor_input": "2000"
+        }
+    }
+}

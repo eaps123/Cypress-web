@@ -1,0 +1,59 @@
+{
+    "auth": {
+        "username": "BROWSERSTACK_USERNAME",
+        "access_key": "BROWSERSTACK_ACCESS_KEY"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        }
+    ],
+    "run_settings": {
+        "interactiveDebugging": "true",
+        "network_logs": "true",
+        "cypress_config_file": "./cypress.config.js",
+        "cypress_version": "13.latest",
+        "project_name": "automation-service-web",
+        "build_name": "Build_WEB_Automation_Service_Test",
+        "parallels": 5,
+        "npm_dependencies": {
+            "browserstack-cypress-cli": "^1.29.1",
+            "browserstack-local": "^1.5.5",
+            "@cypress/grep": "^4.0.1",
+            "@cypress/xpath": "^2.0.3",
+            "@faker-js/faker": "^8.2.0",
+            "cpf": "^2.0.1",
+            "cy-verify-downloads": "^0.2.2",
+            "cypress": "^13.0.0",
+            "cypress-file-upload": "^5.0.8",
+            "cypress-iframe": "^1.0.1",
+            "cypress-real-events": "^1.11.0",
+            "cypress-terminal-report": "^5.3.9",
+            "cypress-xpath": "^2.0.1",
+            "eslint": "^8.53.0",
+            "eslint-plugin-cypress": "^2.15.1",
+            "fs-extra": "^11.2.0",
+            "uuid": "^9.0.1",
+            "archiver": "^3.1.1",
+            "mkdirp": "^1.0.3",
+            "request": "^2.88.0",
+            "yargs": "^14.2.2"
+
+        },
+        "package_config_options": {},
+        "headless": true
+    },
+    "connection_settings": {
+        "local": true
+    },
+    "testObservability": true,
+    "browserstackAutomation": true,
+    "testObservabilityOptions": {
+      "projectName": "automation-service-web",
+      "buildName": "Build_WEB_Automation_Service_Test"
+    }
+}

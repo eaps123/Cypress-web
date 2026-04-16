@@ -1,0 +1,55 @@
+{
+  "name": "automation-cypress-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "open:prd": "cypress open --env configFile=prd",
+    "open:staging": "cypress open --env configFile=staging",
+    "open:canary": "cypress open --env configFile=canary",
+    "run:prd": "cypress run --env configFile=prd",
+    "run:staging": "cypress run --env configFile=staging",
+    "run:canary": "cypress run --env configFile=canary",
+    "allure:run:canary:smoke_test": "npx cypress run --env configFile=canary,grepTags=@smoke_test",
+    "allure:generate": "npx allure generate --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosantosmovidesk/automation-cypress-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiosantosmovidesk/automation-cypress-web/issues"
+  },
+  "homepage": "https://github.com/fabiosantosmovidesk/automation-cypress-web#readme",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "@cypress/xpath": "^2.0.3",
+    "@faker-js/faker": "^8.2.0",
+    "@testing-library/cypress": "^10.0.1",
+    "archiver": "^7.0.1",
+    "browserstack-cypress-cli": "^1.0.1",
+    "browserstack-local": "^1.5.5",
+    "cpf": "^2.0.1",
+    "cy-verify-downloads": "^0.2.2",
+    "cypress": "^13.4.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-real-events": "^1.11.0",
+    "cypress-terminal-report": "^5.3.9",
+    "cypress-xpath": "^2.0.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "fs-extra": "^11.2.0",
+    "mkdirp": "^3.0.1",
+    "request": "^2.88.2",
+    "uuid": "^9.0.1",
+    "yargs": "^17.7.2"
+  }
+}
